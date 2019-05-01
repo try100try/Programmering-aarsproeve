@@ -5,11 +5,13 @@ I den her årsprøve har jeg tænkt mig at gå igennem de dele af pensum jeg sel
 Hvor at jeg vil navigere migselv gennem de forskellige punkter ved brug af enten piletaster eller "A" og "D".
 
 Jeg kommer nok også til at bruge nogle af de originale koder fra dengang vi selv gik igennem den del af pensum.
+
 Sprog:
 P5.js
 html
 css
 c++? (måske en lille bitte bitte smule hvis jeg nævner arduino)
+
 Hvad jeg kommer til at fremlægge:
 1. Farver:
 Fuldstændig basisk, det er ellipse, rect og RGB systemet.
@@ -24,5 +26,9 @@ Løkker springer jeg over.
 Den her kommer jeg måske til at bruge en del tid på da jeg syntes at det er virkelig interessant.
 6. P.5 speech:
 Forklarer hvad jeg har lavet og hvad der er sket.
+
+Kort resume:
+Jeg går gennem det meste af pensum hvori jeg hovedsaligt skriver i p5.js.
+
 --------------------------------------------------------------------------------------------------------------------------------------
 ^ Tror det er det jeg kommer igennem og laver. ^
