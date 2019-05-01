@@ -1,1 +1,23 @@
 # Programmering-aarsproeve
+/*
+I den her årsprøve har jeg tænkt mig at gå igennem de dele af pensum jeg selv har fundet interresant, samt dem jeg mener har haft en stor indflydelse på min læring som elev.
+
+Hvor at jeg vil navigere migselv gennem de forskellige punkter ved brug af enten piletaster eller "A" og "D".
+
+Jeg kommer nok også til at bruge nogle af de originale koder fra dengang vi selv gik igennem den del af pensum.
+Jeg har tænkt mig at starte fra grunden:
+1. Farver:
+Fuldstændig basisk, det er ellipse, rect og RGB systemet.
+2. Variable:
+Forklarer variabler, hvor at der er en bold der vil køre rundt på skærmen.
+3. Betingelser og logiske udsagn:
+Forklarer hvad && og || er/gør. Samt if statements og sådan noget sjovt noget. (If statements er sådan hjertet indenfor min slags programmering)
+4. Funktioner:
+Her er det funktioner kommer ind i spil, jeg overvejer at sætte den sammen med betingelser og logiske udsagn da jeg ret hurtigt kan komme igennem dem begge.
+Løkker springer jeg over.
+5. Objekter:
+Den her kommer jeg måske til at bruge en del tid på da jeg syntes at det er virkelig interessant.
+6. P.5 speech:
+Forklarer hvad jeg har lavet og hvad der er sket.
+--------------------------------------------------------------------------------------------------------------------------------------
+^ Tror det er det jeg kommer igennem og laver. ^
