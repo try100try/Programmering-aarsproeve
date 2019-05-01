@@ -5,7 +5,12 @@ I den her årsprøve har jeg tænkt mig at gå igennem de dele af pensum jeg sel
 Hvor at jeg vil navigere migselv gennem de forskellige punkter ved brug af enten piletaster eller "A" og "D".
 
 Jeg kommer nok også til at bruge nogle af de originale koder fra dengang vi selv gik igennem den del af pensum.
-Jeg har tænkt mig at starte fra grunden:
+Sprog:
+P5.js
+html
+css
+c++? (måske en lille bitte bitte smule hvis jeg nævner arduino)
+Hvad jeg kommer til at fremlægge:
 1. Farver:
 Fuldstændig basisk, det er ellipse, rect og RGB systemet.
 2. Variable:
