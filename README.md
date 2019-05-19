@@ -12,6 +12,13 @@ html
 css
 c++? (måske en lille bitte bitte smule hvis jeg nævner arduino)
 
+Libraries (indtil videre):
+jQuery-3.3.1.min
+p5.dom
+p5
+p5.sound
+p5.speech
+
 Hvad jeg kommer til at fremlægge:
 1. Farver:
 Fuldstændig basisk, det er ellipse, rect og RGB systemet.
