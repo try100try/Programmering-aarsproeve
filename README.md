@@ -1,6 +1,7 @@
 # Programmering-aarsproeve
-Dette projekt er lavet af William Aslak Seitzberg Tonning Christiansen fra klassen 2.R 
 /*
+Dette projekt er lavet af William Aslak Seitzberg Tonning Christiansen fra klassen 2.R 
+
 I den her årsprøve har jeg tænkt mig at gå igennem de dele af pensum jeg selv har fundet interresant, samt dem jeg mener har haft en stor indflydelse på min læring som elev.
 
 Hvor at jeg vil navigere migselv gennem de forskellige punkter ved brug af enten piletaster eller "A" og "D".
