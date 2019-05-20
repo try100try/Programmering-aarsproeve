@@ -36,7 +36,7 @@ Den her kommer jeg måske til at bruge en del tid på da jeg syntes at det er vi
 Forklarer hvad jeg har lavet og hvad der er sket.
 
 Kort resume:
-Jeg går gennem det meste af pensum hvori jeg hovedsaligt skriver i js og en smule html.
+Jeg går gennem det meste af pensum hvori jeg hovedsaligt skriver i javascript, dog er der også noget html.
 
 --------------------------------------------------------------------------------------------------------------------------------------
 ^ Tror det er det jeg kommer igennem og laver. ^
