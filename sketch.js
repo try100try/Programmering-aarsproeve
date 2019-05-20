@@ -6,16 +6,14 @@ var speedx=1;
 var speedy=1;
 var sizex=50;
 var sizey=50;
-
+var s=0;
 function setup() {
     createCanvas(400, 400);
 objekter();
 }
 
     function draw() {
-        
         background(255-(50*valg));
-        text(ni.distx,25,25);
     selector();
     spawner();
 
@@ -32,9 +30,12 @@ if (valg==2){
 if (valg==3){
     lvl3();
 }
-if (valg>3){
+if (valg==4){
+    lvl4();
+}
+if (valg>4){
     alert("End of the ride baby");
-    valg=3;
+    valg=4;
 }
 if (valg<=0){
     valg=1;
@@ -61,48 +62,51 @@ if (freebird<=0){
     function lvl1(){
     fill(0,100,200); 
     stroke(200,200,200);
-    ellipse(135,255,15,100);
-    ellipse(160,255,15,100);
-    ellipse(123,200,15,75);
-    ellipse(200,180,75,15)
-    ellipse(150,200,50,125);
-    ellipse(150,125,50,50);
-    noStroke(); 
-    rect(215,155,25,65);
-    rect(215,155,85,25)
-    fill(random(200,255),random(50,75),random(50,75))
-    rect(300,155,10,25);
-    fill(255,255,255);
-    ellipse(165,125,10,10);
-    ellipse(145,125,10,10);
-    fill(0,0,0);
-    ellipse(165,125,5,5);
-    ellipse(145,125,5,5);
+    ellipse(150,150,50,50);
+    text("ellipse(150,150,50,50)",90,120);
+    fill(200,100,0);
+    text("rect(width-200,height-150,100,75)",155,240);
+    stroke(0);
+    rectMode(CORNER);
+    rect(width-200,height-150,100,75);
+    fill(0);
+    ellipse(width-200,height-150,15,15);
+    ellipse(150,150,15,15);
+    text(mouseX,mouseX+15,mouseY+15);
+    text(mouseY,mouseX+15,mouseY+30);
     }
     //variabler, betingelser samt logistiske udsagn! UwU
     function lvl2(){
-    fill(255);
+    if (keyIsDown(32) && freebird<=0){
+    if (s==50){
+    s=0;
+    freebird=1;
+    } else {
+    s=50;
+    freebird=1;
+    }
+    }
+    fill(255-s*5);
     xpos=xpos+speedx;
     ypos=ypos+speedy;
-    //ypos=ypos+speedy;
     ellipse(xpos,ypos,sizex,sizey);
-    if (xpos>=400 || xpos<=0){
+    if (xpos>=400-s/2 || xpos<=0+s/2){
     speedx=speedx*-1;
-    if (xpos>=400){
+    if (xpos>=400-s/2){
     speedx=random(-.75,-5);
     }
-    if (xpos<=0){
+    if (xpos<=0+s/2){
     speedx=random(.75,5);
     }
     sizex=random(25,75);
     sizey=random(25,75);
     }
-    if (ypos>=400 || ypos<=0){
+    if (ypos>=400-s/2 || ypos<=0+s/2){
         speedy=speedy*-1;
-        if (ypos>=400){
+        if (ypos>=400-s/2){
         speedy=random(-.75,-5);
         }
-        if (ypos<=0){
+        if (ypos<=0+s/2){
         speedy=random(.75,5);
         }
         sizex=random(25,75);
@@ -135,13 +139,47 @@ if (freebird<=0){
         }
                 
             }
-    }
+            game = {
+                x: width/2,
+                y:height/2,
+                size: 100,
+                col: 255,
+                speed: 1,
+                timer: 15,
+
+                show: function(){
+                rectMode(CENTER);
+                fill(this.col);
+                rect(this.x,this.y,this.size,this.size);
+                },
+                play: function(){
+                this.x=this.x+this.speed;
+                this.timer--;
+                if (mouseIsPressed && mouseX<game.x+game.size/2 && mouseX>game.x-game.size/2 && mouseY<game.y+game.size/2 && mouseY>game.y-game.size/2 && this.timer<=0){
+this.speed=this.speed*1.35;
+this.size=this.size/1.1;
+                }
+                if (mouseIsPressed && this.timer<=0){
+                    this.timer=15;
+                    }
+                if (this.x>width+this.size/2){
+                this.x=0-this.size/2+-random(5,100);
+                this.y=random(0+this.size/2,height-this.size/2);
+                }
+                }
+                }
+        }
 //objekter
 function lvl3(){
 ni.show();
-if (mouseIsPressed && mouseX<ni.x+ni.size/2 && mouseX>ni.x-ni.size/2 && mouseY<ni.y+ni.size/2 && mouseY>ni.y-ni.size/2){
+if (mouseIsPressed){
 ni.move();
 }
 }
 
 
+
+function lvl4(){
+    game.show();
+    game.play();
+}
