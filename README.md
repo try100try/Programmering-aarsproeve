@@ -1,5 +1,7 @@
 # Programmering-aarsproeve
-/*
+
+Dette projekt er lavet af William Aslak Seitzberg Tonning Christiansen fra klassen 2.R 
+
 I den her årsprøve har jeg tænkt mig at gå igennem de dele af pensum jeg selv har fundet interresant, samt dem jeg mener har haft en stor indflydelse på min læring som elev.
 
 Hvor at jeg vil navigere migselv gennem de forskellige punkter ved brug af enten piletaster eller "A" og "D".
@@ -35,7 +37,7 @@ Den her kommer jeg måske til at bruge en del tid på da jeg syntes at det er vi
 Forklarer hvad jeg har lavet og hvad der er sket.
 
 Kort resume:
-Jeg går gennem det meste af pensum hvori jeg hovedsaligt skriver i p5.js.
+Jeg går gennem det meste af pensum hvori jeg hovedsaligt skriver i javascript, dog er der også noget html.
 
 --------------------------------------------------------------------------------------------------------------------------------------
 ^ Tror det er det jeg kommer igennem og laver. ^
