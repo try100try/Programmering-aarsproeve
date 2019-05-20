@@ -1,22 +1,11 @@
 var valg=1;
+var freebird=0;
 var xpos=350;
 var ypos=375;
 var speedx=1;
 var speedy=1;
 var sizex=50;
 var sizey=50;
-var freebird=0;
-var timeleft = 10;
-var downloadTimer = setInterval(function(){
-  document.getElementById("progressBar").value = 10 - timeleft;
-  timeleft -= 1;
-  if(timeleft <= 0)
-    clearInterval(downloadTimer);
-}, 1000);
-/*
-Min kode er sådan at den starter virkelig dårligt 
-og jo mere vi går hen jo mere avanceret/godt bliver det
-*/
 
 function setup() {
     createCanvas(400, 400);
@@ -33,6 +22,7 @@ objekter();
 }
 
     function spawner(){
+        //Jeg vil gerne optimere det her.
 if (valg==1){
     lvl1();
 }
@@ -42,12 +32,9 @@ if (valg==2){
 if (valg==3){
     lvl3();
 }
-if (valg==4){
-    lvl4();
-}
-if (valg>4){
+if (valg>3){
     alert("End of the ride baby");
-    valg=4;
+    valg=3;
 }
 if (valg<=0){
     valg=1;
@@ -129,7 +116,7 @@ if (freebird<=0){
             distx: mouseX,
             disty: mouseY,
             size: 100,
-            col: color(255, 255, 255),
+            col: color(255),
             show: function () {
                 
                 fill(this.col)
@@ -157,6 +144,4 @@ ni.move();
 }
 }
 
-function lvl4(){
 
-}

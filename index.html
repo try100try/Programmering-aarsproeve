@@ -20,15 +20,15 @@
 
 <body>
 <div class="">
-    <p> Examen slutter om <span id="countdowntimer">10 </span> Minutter</p>
+  <progress value="0" max="1140" id="progressBar"></progress>
     <script type="text/javascript">
-      var timeleft = 10;
-      var downloadTimer = setInterval(function(){
-      timeleft--;
-      document.getElementById("countdowntimer").textContent = timeleft;
-      if(timeleft <= 0)
-          clearInterval(downloadTimer);
-      },1000);
+    var timeleft = 1140;
+var downloadTimer = setInterval(function(){
+  document.getElementById("progressBar").value = 1140 - timeleft;
+  timeleft -= 1;
+  if(timeleft <= 0)
+    clearInterval(downloadTimer);
+}, 1000);
   </script>
 </div>
 
