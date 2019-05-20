@@ -1,4 +1,4 @@
-var valg=3;
+var valg=1;
 var xpos=350;
 var ypos=375;
 var speedx=1;
@@ -10,11 +10,12 @@ function preload() {
 }
 function setup() {
     createCanvas(400, 400);
-    background(200);
+    
     
     }
     
     function draw() {
+        background(255-(25*valg));
     spawner();
     }
 
@@ -31,7 +32,7 @@ function setup() {
     }
     }
     //farver, fill(r,g,b) - rect/ellipse(x,y,width,height)
-    function lvl1(){
+    function lvl1(){7
     fill(0,100,200); 
     stroke(200,200,200);
     ellipse(135,255,15,100);
@@ -54,7 +55,6 @@ function setup() {
     }
     //variabler, betingelser samt logistiske udsagn! UwU
     function lvl2(){
-    background(200);
     xpos=xpos+speedx;
     ypos=ypos+speedy;
     //ypos=ypos+speedy;
@@ -84,5 +84,4 @@ function setup() {
     }
 //objekter og funktioner
 function lvl3(){
-
 }
